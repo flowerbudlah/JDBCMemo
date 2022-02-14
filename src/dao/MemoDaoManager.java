@@ -175,15 +175,15 @@ public class MemoDaoManager implements MemoInterface {
 			rs = pstmt.executeQuery(); 
 		
 			while(rs.next()) { //if를 쓰면 한행만 출력되는 문법
-                UserMemo userMemo = new UserMemo(); 
+                		UserMemo userMemo = new UserMemo(); 
                 	
-                userMemo.setMemoseq(rs.getString("memoseq"));
-                userMemo.setTitle(rs.getString("title"));
-                userMemo.setContent(rs.getString("content"));
-                userMemo.setIndate(rs.getString("indate")); 
-                userMemo.setId(rs.getString("id")); 
+                		userMemo.setMemoseq(rs.getString("memoseq"));
+                		userMemo.setTitle(rs.getString("title"));
+                		userMemo.setContent(rs.getString("content"));
+                		userMemo.setIndate(rs.getString("indate")); 
+                		userMemo.setId(rs.getString("id")); 
                 		
-                memoList.add(userMemo); 
+               			memoList.add(userMemo); 
     		}
 			
 			
