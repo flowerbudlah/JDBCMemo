@@ -221,7 +221,7 @@ public class MemoDaoManager implements MemoInterface {
 			rs = pstmt.executeQuery(); 
 		
 			
-			while(rs.next()) { //if를 쓰면 한행만 출력되는 문법
+			while(rs.next()) { //while을 쓰면 여러행이 출력. 
                 		UserMemo userMemo = new UserMemo(); 
                 	
                 		userMemo.setMemoseq(rs.getString("memoseq"));
